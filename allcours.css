@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+.allcours {
+    max-width: 1280px;
+}
+.cours_item {
+    width: 25%;
+    background-color: rgb(255, 221, 221);
+}
+.cours_img img{
+    width: 70px;
+}
+.cours_img {
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+.cours_title {
+    font-size: 13px;
+    opacity: 0.5;
+}
+.cours_main{
+    margin-top: 3px;
+}
+.cours_content {
+    margin: 5px 0;
+}
