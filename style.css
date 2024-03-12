@@ -167,6 +167,160 @@ main {
     margin: 0 10px;
 }
 
+.information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+    width: 100%;
+    margin: 20px;
+    justify-content: space-around;
+}
+.conteiner1 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px #000 solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+.conteiner1 p {
+    margin: 10px;
+}
+.conteiner1 h4 {
+    margin: 10px;
+}
+.conteiner1 img {
+    width: 100px;
+}
+.geography {
+    width: 500px;
+    height: 500px;
+    border: 2px #000 solid;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slide {
+    min-width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.search-form {
+    width: 40%;
+    margin: 50px auto;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.btn {
+    display: inline-block;
+    border: 2px red solid;
+    color: red;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.heater-card{
+    width: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.review-card {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.review-image {
+  margin-bottom: 5px;
+}
+
+.review-image img {
+  max-width: 50px;
+  height: auto;
+}
+
+.review-details p {
+  margin: 5px 0;
+}
+
+.review-details p strong {
+  margin-right: 5px;
+}
+
+  
 
 
 footer {
