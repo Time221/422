@@ -19,28 +19,28 @@
                         <a href="allcours.html" class="navbar-link">Все курсы</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Поиск</a>
+                        <a href="search.html" class="navbar-link">Поиск</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">О компании</a>
+                        <a href="info.html" class="navbar-link">О компании</a>
                     </li>
                     <li class="navbar-item">
                         <a href="#" class="navbar-link">Акции</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Отзывы</a>
+                        <a href="reviews.html" class="navbar-link">Отзывы</a>
                     </li>
                 </ul>
             </nav>
             <div class="navbar-cont">
                 <a class="navbar-enter" href="registration.html">Вход</a>
-                <a class="navbar-registration" href="registration.html">Регистрация</a>
+                <a class="navbar-registration" href="registration2.html">Регистрация</a>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container">
+        <div class="container" id="main">
             <div class="cont1">
                 <div class="main-info">
                     Войти в IT с нуля
@@ -59,7 +59,7 @@
         </div>
     </main>
 
-    <div class="modal">
+    <div class="modal" id="modal">
         <div class="modal_main">
             <div class="modal_item">
                 <div class="modal_icon"></div>
@@ -89,7 +89,8 @@
     </div>
 
 
-    <div class="information">
+    <div class="information" id="info">
+        <h2>О нас</h2>
         <div class="info">
             <div class="conteiner1">
                 <img src="img/mission.png" alt="42">
@@ -112,76 +113,78 @@
         </div>
     </div>
 
-    <div class="slider">
+    <div class="slider" id="slider">
+        <h2>Акции</h2>
         <div class="slides">
-          <div class="slide">
-            <h3>Название акции 1</h3>
-            <img src="image1.jpg" alt="Изображение акции 1">
-            <p>Содержание акции 1</p>
-            <a href="#" class="btn">Перейти на курс</a>
-          </div>
-          <div class="slide">
-            <h3>Название акции 2</h3>
-            <img src="image2.jpg" alt="Изображение акции 2">
-            <p>Содержание акции 2</p>
-            <a href="#" class="btn">Перейти на курс</a>
-          </div>
-          <!-- Добавьте сколько угодно слайдов сюда -->
+            <div class="slide">
+                <h3>Название акции 1</h3>
+                <img src="img/unnamed.png" alt="Изображение акции 1">
+                <p>Содержание акции 1</p>
+                <a href="#" class="btn">Перейти на курс</a>
+            </div>
+            <div class="slide">
+                <h3>Название акции 2</h3>
+                <img src="img/sale20.png" alt="Изображение акции 2">
+                <p>Содержание акции 2</p>
+                <a href="#" class="btn">Перейти на курс</a>
+            </div>
         </div>
     </div>
 
-    <!-- переделай форму -->
-
-    <div class="search-form">
-        <h2>Поиск курса</h2>
-        <form action="#" method="GET">
-          <div class="form-group">
-            <label for="course-name">Название курса:</label>
-            <input type="text" id="course-name" name="course-name" placeholder="Введите название курса">
-          </div>
-          <div class="form-group">
-            <label for="course-price">Предполагаемая стоимость:</label>
-            <input type="text" id="course-price" name="course-price" placeholder="Введите стоимость курса">
-          </div>
-          <button type="submit" class="btn">Поиск</button>
-        </form>
+    <div class="serach-body" id="search">
+        <div class="search-container">
+            <h2>Поиск курса</h2>
+            <div class="search-form">
+                <form action="#" class="form-search">
+                    <div class="form-group">
+                        <label for="course-name">Название курса:</label>
+                        <input type="text" id="course-name" name="course-name" placeholder="Введите название курса">
+                    </div>
+                    <div class="form-group">
+                        <label for="course-price">Предполагаемая стоимость:</label>
+                        <input type="text" id="course-price" name="course-price" placeholder="Введите стоимость курса">
+                    </div>
+                    <button type="submit" class="btn">Поиск</button>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <div class="reviews-container">
+    <div class="reviews-container" id="review">
         <div class="heater-card">
             <h2>Отзывы пользователей</h2>
         </div>
         
         <div class="review-card">
-          <div class="review-image">
-            <img src="user1.jpg" alt="Фото пользователя">
-          </div>
+            <div class="review-image">
+                <img src="img/user1.jpg" alt="Фото пользователя">
+            </div>
           <div class="review-details">
-            <p><strong>Возраст:</strong> 25 лет</p>
-            <p><strong>Пройденный курс:</strong> Название курса 1</p>
-            <p><strong>Куратор:</strong> Имя куратора 1</p>
-            <p><strong>Дата размещения отзыва:</strong> 10.03.2024</p>
-            <p><strong>Содержание отзыва:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet quis tortor eu lobortis.</p>
-            <p><strong>Индикатор полезности:</strong> 4.5/5</p>
+                <p><strong>Возраст:</strong> 25 лет</p>
+                <p><strong>Пройденный курс:</strong> Название курса 1</p>
+                <p><strong>Куратор:</strong> Имя куратора 1</p>
+                <p><strong>Дата размещения отзыва:</strong> 10.03.2024</p>
+                <p><strong>Содержание отзыва:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet quis tortor eu lobortis.</p>
+                <p><strong>Индикатор полезности:</strong> 4.5/5</p>
           </div>
         </div>
         <div class="review-card">
             <div class="review-image">
-              <img src="user2.jpg" alt="Фото пользователя">
+                <img src="img/user2.jpg" alt="Фото пользователя">
             </div>
             <div class="review-details">
-              <p><strong>Возраст:</strong> 30 лет</p>
-              <p><strong>Пройденный курс:</strong> Название курса 2</p>
-              <p><strong>Куратор:</strong> Имя куратора 2</p>
-              <p><strong>Дата размещения отзыва:</strong> 11.03.2024</p>
-              <p><strong>Содержание отзыва:</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-              <p><strong>Индикатор полезности:</strong> 4.8/5</p>
+                <p><strong>Возраст:</strong> 30 лет</p>
+                <p><strong>Пройденный курс:</strong> Название курса 2</p>
+                <p><strong>Куратор:</strong> Имя куратора 2</p>
+                <p><strong>Дата размещения отзыва:</strong> 11.03.2024</p>
+                <p><strong>Содержание отзыва:</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                <p><strong>Индикатор полезности:</strong> 4.8/5</p>
             </div>
-          </div>
+            </div>
           
           <div class="review-card">
             <div class="review-image">
-              <img src="user3.jpg" alt="Фото пользователя">
+              <img src="img/user3.jpg" alt="Фото пользователя">
             </div>
             <div class="review-details">
               <p><strong>Возраст:</strong> 27 лет</p>
@@ -195,7 +198,7 @@
           
           <div class="review-card">
             <div class="review-image">
-              <img src="user4.jpg" alt="Фото пользователя">
+              <img src="img/user4.jpg" alt="Фото пользователя">
             </div>
             <div class="review-details">
               <p><strong>Возраст:</strong> 32 лет</p>
@@ -209,7 +212,7 @@
           
           <div class="review-card">
             <div class="review-image">
-              <img src="user5.jpg" alt="Фото пользователя">
+              <img src="img/user5.jpg" alt="Фото пользователя">
             </div>
             <div class="review-details">
               <p><strong>Возраст:</strong> 29 лет</p>
@@ -223,7 +226,7 @@
           
           <div class="review-card">
             <div class="review-image">
-              <img src="user6.jpg" alt="Фото пользователя">
+              <img src="img/user6.jpg" alt="Фото пользователя">
             </div>
             <div class="review-details">
               <p><strong>Возраст:</strong> 31 лет</p>
@@ -236,13 +239,20 @@
           </div>
     </div>
 
-    <!-- <footer>
+    <footer>
+        <div class="footer-head">
+            <a href="#main">Главная</a>
+            <a href="#info">О компании</a>
+            <a href="#slider">Акции</a>
+            <a href="#review">Отзывы</a>
+            <a href="allcours.html">Все курсы</a>
+            <a href="">Контакты</a>
+        </div>
         <div class="footer_text">
             Телефон “8 (800)123-45-67” 
 	
             e-mail: uchiIT@obr.ru
         </div>
-    </footer> -->
-
+    </footer>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вход</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="regisr.css">
+    <link rel="stylesheet" href="rev_over.css">
 </head>
 <body>
     <header class="header">
@@ -41,23 +41,22 @@
     </header>
 
     <main>
-        <div class="container-enter">
-            <div class="content">
-                <form action="#">
-                    <p>Войдите используя свой аккаунт</p>
-                    <div class="input-box">
-                        <input type="text" placeholder="e-mail">
-                    </div>
-                    <div class="input-box">
-                        <input type="text" placeholder="Пароль">
-                    </div>
-
-                    <div class="button">
-                        <input type="button" value="Войти">
-                    </div>
-                    
-                    <p>Если вы забыли пароль: <a href="#">Востанивить пароль</a></p>
-                </form>
+        <div class="serach-body">
+            <div class="search-container">
+                <h2>Поиск курса</h2>
+                <div class="search-form">
+                    <form action="#" class="form-search">
+                        <div class="form-group">
+                            <label for="course-name">Название курса:</label>
+                            <input type="text" id="course-name" name="course-name" placeholder="Введите название курса">
+                        </div>
+                        <div class="form-group">
+                            <label for="course-price">Предполагаемая стоимость:</label>
+                            <input type="text" id="course-price" name="course-price" placeholder="Введите стоимость курса">
+                        </div>
+                        <button type="submit" class="btn">Поиск</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>

@@ -48,3 +48,9 @@
     color: #fff;
     cursor: pointer;
 }
+.checkbox {
+    padding-bottom: 10px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}

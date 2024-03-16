@@ -2,6 +2,9 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #ececec;
 }
+html {
+    scroll-behavior: smooth;
+}
 .header {
     background-color: #ececec;
     border-bottom: 4px solid rgb(255, 0, 0);
@@ -36,6 +39,12 @@ body {
     color: #000;
     transition: 0.3s ease;
 }
+.navbar-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 .navbar-enter:hover {
     background-color: red;
@@ -69,6 +78,23 @@ body {
     background-color: transparent;
     color: red;
     border: 1px red solid;
+}
+@media (max-width: 768px) {
+    .navbar-item {
+        margin: 0 15px;
+    }
+    .navbar-menu {
+        font-size: 12px;
+    }
+    .logo img{
+        max-width: 120px;
+    }
+    .navbar-enter{
+        font-size: 15px;
+    }
+    .navbar-registration {
+        font-size: 15px;
+    }
 }
 main {
     display: flex;
@@ -126,6 +152,7 @@ main {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .bot p {
     font-size: 20px;
@@ -133,7 +160,7 @@ main {
     margin: 5px;
 }
 .main-enter:hover {
-    box-shadow: 8px 10px 5px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 10px 3px 3px rgba(255, 255, 255, 0.2);
 }
 
 
@@ -166,7 +193,12 @@ main {
     height: 25px;
     margin: 0 10px;
 }
-
+@media (max-width: 768px) {
+    .modal_main {
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+}
 .information {
     width: 100%;
     display: flex;
@@ -210,66 +242,52 @@ main {
     text-align: center;
 }
 
-.slider {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    height: 300px;
-  }
-  
-  .slides {
+.slide img {
+    width: 200px;
+}
+.slides {
     display: flex;
-  }
-  
-  .slide {
-    min-width: 100%;
-    flex: 0 0 auto;
-  }
-  
-  .slide img {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.slider{
+    text-align: center;
+}
+
+.serach-body {
     width: 100%;
-    height: auto;
-  }
-  
-  .btn {
-    display: inline-block;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
 }
 
-
-
-.search-form {
-    width: 40%;
-    margin: 50px auto;
+.search-container {
+    max-width: 1280px;
+    width: 60%;
 }
-  
 .form-group {
     margin-bottom: 20px;
 }
-  
+.form-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
 label {
     display: block;
     margin-bottom: 5px;
 }
-  
 input[type="text"] {
-    width: 100%;
+    width: 18rem;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 18px;
 }
-  
 .btn {
-    display: inline-block;
+    font-size: 20px;
     border: 2px red solid;
     color: red;
     padding: 10px 20px;
@@ -277,11 +295,20 @@ input[type="text"] {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
+    height: 50%;
 }
-  
 .btn:hover {
     background-color: red;
     color: #fff;
+}
+h2 {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .form-search {
+        flex-direction: column;
+    }
 }
 
 
@@ -290,14 +317,17 @@ input[type="text"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 .heater-card{
-    width: calc(50% - 20px);
+
   margin-bottom: 20px;
   padding: 10px;
 }
 .review-card {
-  width: calc(50% - 20px);
+  width: 40rem;
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -320,7 +350,7 @@ input[type="text"] {
   margin-right: 5px;
 }
 
-  
+
 
 
 footer {
@@ -329,12 +359,25 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .footer_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+}
+.footer-head {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-head a{
+    text-decoration: none;
+    color: #fff;
 }
